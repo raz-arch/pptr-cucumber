@@ -1,0 +1,19 @@
+{
+  "name": "pptr-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raz-arch/pptr-cucumber.git"
+  },
+  "author": "Rahul Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raz-arch/pptr-cucumber/issues"
+  },
+  "homepage": "https://github.com/raz-arch/pptr-cucumber#readme"
+}
