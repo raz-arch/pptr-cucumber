@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js -f json:cucumber_report.json",
+    "generate:report": "node report.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/raz-arch/pptr-cucumber/issues"
   },
-  "homepage": "https://github.com/raz-arch/pptr-cucumber#readme"
+  "homepage": "https://github.com/raz-arch/pptr-cucumber#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.1.0",
+    "puppeteer": "^2.0.0"
+  }
 }
