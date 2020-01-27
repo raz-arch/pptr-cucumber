@@ -1,0 +1,83 @@
+[
+  {
+    "description": "As a user, I should be able to login to the application",
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "line": 1,
+    "id": "login-feature",
+    "tags": [],
+    "uri": "features\\login.feature",
+    "elements": [
+      {
+        "id": "login-feature;user-can-login-to-the-application",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User can login to the application",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\step.js:3"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 45000000,
+              "error_message": "TypeError: this.launchBrowser is not a function\n    at World.<anonymous> (E:\\Work\\pptr-cucumber\\features\\support\\step.js:4:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user open login page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user fill login form",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "user click submit button",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user expect to see application content",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\step.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2000000,
+              "error_message": "TypeError: this.closeBrowser is not a function\n    at World.<anonymous> (E:\\Work\\pptr-cucumber\\features\\support\\step.js:8:15)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
