@@ -4,8 +4,17 @@ const puppeteer = require('puppeteer')
 
 class CustomWorld {
 	async launchBrowser() {
-		this.browser = await puppeteer.launch({ headless: false, slowMo: 0 })
-		this.page = await this.browser.newPage()
+        this.browser = await puppeteer.launch({ headless: false,
+            slowMo: 0,
+            args:[
+                '--start-maximized'
+            ]
+             })
+        this.page = await this.browser.newPage()
+        await this.page.setViewport({
+            height: 768,
+            width: 1366
+        })
 	}
 	async closeBrowser() {
 		await this.browser.close()
